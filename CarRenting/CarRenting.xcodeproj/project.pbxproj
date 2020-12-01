@@ -10,12 +10,16 @@
 		C120C8EE257633540061A26F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C120C8ED257633540061A26F /* HomeViewController.swift */; };
 		C120C8F1257633F20061A26F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C120C8F0257633F20061A26F /* SearchViewController.swift */; };
 		C120C8F4257634010061A26F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C120C8F3257634010061A26F /* ProfileViewController.swift */; };
+		C120C8F7257660E80061A26F /* Work.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C120C8F6257660E80061A26F /* Work.storyboard */; };
+		C120C8FF257670290061A26F /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C120C8FE257670290061A26F /* Search.storyboard */; };
 		C144C9A0252C13400078F916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C144C99F252C13400078F916 /* AppDelegate.swift */; };
 		C144C9A2252C13400078F916 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C144C9A1252C13400078F916 /* SceneDelegate.swift */; };
 		C144C9A4252C13400078F916 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C144C9A3252C13400078F916 /* ViewController.swift */; };
 		C144C9A7252C13400078F916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C144C9A5252C13400078F916 /* Main.storyboard */; };
 		C144C9A9252C13420078F916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C144C9A8252C13420078F916 /* Assets.xcassets */; };
 		C144C9AC252C13420078F916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C144C9AA252C13420078F916 /* LaunchScreen.storyboard */; };
+		C17E3DFF2576720E00326946 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17E3DFE2576720E00326946 /* Home.storyboard */; };
+		C17E3E022576726200326946 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17E3E012576726200326946 /* Profile.storyboard */; };
 		C1C9E603257494250081CEFA /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C9E602257494250081CEFA /* SignupViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +27,8 @@
 		C120C8ED257633540061A26F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C120C8F0257633F20061A26F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C120C8F3257634010061A26F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C120C8F6257660E80061A26F /* Work.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Work.storyboard; sourceTree = "<group>"; };
+		C120C8FE257670290061A26F /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		C144C99C252C13400078F916 /* CarRenting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarRenting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C144C99F252C13400078F916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C144C9A1252C13400078F916 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +37,8 @@
 		C144C9A8252C13420078F916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C144C9AB252C13420078F916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C144C9AD252C13420078F916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C17E3DFE2576720E00326946 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		C17E3E012576726200326946 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		C1C9E602257494250081CEFA /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,13 +76,17 @@
 				C144C9A3252C13400078F916 /* ViewController.swift */,
 				C1C9E602257494250081CEFA /* SignupViewController.swift */,
 				C144C9A1252C13400078F916 /* SceneDelegate.swift */,
-				C144C9A8252C13420078F916 /* Assets.xcassets */,
 				C144C9A5252C13400078F916 /* Main.storyboard */,
-				C144C9AA252C13420078F916 /* LaunchScreen.storyboard */,
-				C144C9AD252C13420078F916 /* Info.plist */,
+				C120C8F6257660E80061A26F /* Work.storyboard */,
+				C17E3DFE2576720E00326946 /* Home.storyboard */,
+				C120C8FE257670290061A26F /* Search.storyboard */,
+				C17E3E012576726200326946 /* Profile.storyboard */,
+				C120C8ED257633540061A26F /* HomeViewController.swift */,
 				C120C8F0257633F20061A26F /* SearchViewController.swift */,
 				C120C8F3257634010061A26F /* ProfileViewController.swift */,
-				C120C8ED257633540061A26F /* HomeViewController.swift */,
+				C144C9A8252C13420078F916 /* Assets.xcassets */,
+				C144C9AD252C13420078F916 /* Info.plist */,
+				C144C9AA252C13420078F916 /* LaunchScreen.storyboard */,
 			);
 			path = CarRenting;
 			sourceTree = "<group>";
@@ -138,7 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C144C9AC252C13420078F916 /* LaunchScreen.storyboard in Resources */,
+				C120C8FF257670290061A26F /* Search.storyboard in Resources */,
+				C120C8F7257660E80061A26F /* Work.storyboard in Resources */,
+				C17E3DFF2576720E00326946 /* Home.storyboard in Resources */,
 				C144C9A9252C13420078F916 /* Assets.xcassets in Resources */,
+				C17E3E022576726200326946 /* Profile.storyboard in Resources */,
 				C144C9A7252C13400078F916 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

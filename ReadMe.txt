@@ -1,3 +1,7 @@
+version 0.3.1
+by Quyet
+- Chia nhỏ từng phần ra để có thể làm chung trong 1 project - Để sửa layout 
+=========
 version 0.3
 by Quyet
 - Cập nhật Navigation Bars (ko biết cần ko nhưng thêm vô đã)
