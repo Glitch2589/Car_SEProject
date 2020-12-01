@@ -1,3 +1,7 @@
+version 0.3
+by Quyet
+- Cập nhật Navigation Bars (ko biết cần ko nhưng thêm vô đã)
+==========
 version 0.2
 Make by Quyet
 - Cập nhật Tab Bar Controller của Home (Nơi lựa xe), Search (Tìm Kiếm), Profile (Thông tin cá nhân)

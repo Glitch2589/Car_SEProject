@@ -197,11 +197,11 @@
                         <viewLayoutGuide key="safeArea" id="s8C-tb-rc0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" image="Search" selectedImage="Search_Selected" id="qI4-o6-sIc"/>
+                    <navigationItem key="navigationItem" title="Search" id="E8t-uZ-ptw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eKl-SF-DHe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4414" y="59"/>
+            <point key="canvasLocation" x="5320.289855072464" y="58.695652173913047"/>
         </scene>
         <!--Home-->
         <scene sceneID="NoX-bx-z8Y">
@@ -213,11 +213,11 @@
                         <viewLayoutGuide key="safeArea" id="R7r-0T-uby"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="trcake" selectedImage="patJW" id="ltE-Z2-sEI"/>
+                    <navigationItem key="navigationItem" title="Home" id="KWa-4g-Kjb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SFg-4i-78P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4413" y="-740"/>
+            <point key="canvasLocation" x="5318.840579710145" y="-740.21739130434787"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="U4Z-C6-Kfo">
@@ -230,9 +230,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="kvt-Dn-chV" kind="relationship" relationship="viewControllers" id="NOV-dL-qXB"/>
-                        <segue destination="hmR-xA-pAO" kind="relationship" relationship="viewControllers" id="8pT-fT-7Sb"/>
-                        <segue destination="4t5-sl-11W" kind="relationship" relationship="viewControllers" id="Ihs-CB-waQ"/>
+                        <segue destination="4TS-tB-AiI" kind="relationship" relationship="viewControllers" id="NOV-dL-qXB"/>
+                        <segue destination="D40-Mp-8jr" kind="relationship" relationship="viewControllers" id="8pT-fT-7Sb"/>
+                        <segue destination="chk-cx-BFo" kind="relationship" relationship="viewControllers" id="Ihs-CB-waQ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lxX-2M-GVG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -249,20 +249,79 @@
                         <viewLayoutGuide key="safeArea" id="OJR-NT-l4Z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" selectedImage="Profile_Selected" id="Egi-R5-CVv"/>
+                    <navigationItem key="navigationItem" title="Profile" id="tjI-8i-u6X"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wxF-8g-4Sd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4413" y="833"/>
+            <point key="canvasLocation" x="5318.840579710145" y="832.33695652173924"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Qme-sz-fWK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4TS-tB-AiI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="trcake" selectedImage="1" id="ltE-Z2-sEI">
+                        <inset key="imageInsets" minX="0.0" minY="3" maxX="0.0" maxY="4"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b9g-6E-PUi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kvt-Dn-chV" kind="relationship" relationship="rootViewController" id="etk-Hc-nqf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VDK-go-IWh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4411.594202898551" y="-740.21739130434787"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="bEG-rd-47Y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D40-Mp-8jr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="Search" selectedImage="Search_Selected" id="qI4-o6-sIc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yAc-Sf-tUp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hmR-xA-pAO" kind="relationship" relationship="rootViewController" id="kG0-3L-due"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vy3-WW-qRy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4413.04347826087" y="58.695652173913047"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="86F-7h-GqN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="chk-cx-BFo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" selectedImage="Profile_Selected" id="Egi-R5-CVv"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9qs-y4-EnJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4t5-sl-11W" kind="relationship" relationship="rootViewController" id="brE-S6-0T2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vkT-tj-qmO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4411.594202898551" y="832.33695652173924"/>
         </scene>
     </scenes>
     <resources>
+        <image name="1" width="42.666667938232422" height="42.666667938232422"/>
         <image name="2" width="42.666667938232422" height="34.333332061767578"/>
         <image name="Profile" width="20" height="21"/>
         <image name="Profile_Selected" width="20" height="21"/>
         <image name="Search" width="23" height="22"/>
         <image name="Search_Selected" width="23" height="22"/>
-        <image name="patJW" width="42.666667938232422" height="42.666667938232422"/>
         <image name="trcake" width="42.666667938232422" height="42.666667938232422"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
