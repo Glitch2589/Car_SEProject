@@ -1,9 +1,15 @@
+version 0.5
+by Quyet
+- update kết nối với firebase
+=========
 version 0.4
+by Quyet
 - fix hầu hết bugs
 - group storyboards và viewcontroller gọn hơn
 - Tinh chỉnh 1 chút frontend phần login
 =========
 version 0.3.2 -> 0.3.3
+by Quyet
 - clean code
 + fix minor bug (sai tên?)
 =========
