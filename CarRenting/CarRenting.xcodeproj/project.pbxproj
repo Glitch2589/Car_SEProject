@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89D39CCF76AF8D898215758C /* Pods_CarRenting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E459E2265B4F2853D7355C4 /* Pods_CarRenting.framework */; };
 		C120C8EE257633540061A26F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C120C8ED257633540061A26F /* HomeViewController.swift */; };
 		C120C8F1257633F20061A26F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C120C8F0257633F20061A26F /* SearchViewController.swift */; };
 		C120C8F4257634010061A26F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C120C8F3257634010061A26F /* ProfileViewController.swift */; };
@@ -20,10 +21,14 @@
 		C17E3DFF2576720E00326946 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17E3DFE2576720E00326946 /* Home.storyboard */; };
 		C17E3E022576726200326946 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17E3E012576726200326946 /* Profile.storyboard */; };
 		C17E3E1125767D3A00326946 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E3E1025767D3A00326946 /* SignInViewController.swift */; };
+		C17E3E1D2577B16E00326946 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C17E3E1C2577B16E00326946 /* GoogleService-Info.plist */; };
 		C1C9E603257494250081CEFA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C9E602257494250081CEFA /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6CEF37A2F6949C65F15F237E /* Pods-CarRenting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarRenting.debug.xcconfig"; path = "Target Support Files/Pods-CarRenting/Pods-CarRenting.debug.xcconfig"; sourceTree = "<group>"; };
+		7E459E2265B4F2853D7355C4 /* Pods_CarRenting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarRenting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACF604E87D4A4EDFA48C1EDB /* Pods-CarRenting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarRenting.release.xcconfig"; path = "Target Support Files/Pods-CarRenting/Pods-CarRenting.release.xcconfig"; sourceTree = "<group>"; };
 		C120C8ED257633540061A26F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C120C8F0257633F20061A26F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C120C8F3257634010061A26F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +44,7 @@
 		C17E3DFE2576720E00326946 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C17E3E012576726200326946 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		C17E3E1025767D3A00326946 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		C17E3E1C2577B16E00326946 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C1C9E602257494250081CEFA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,17 +53,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89D39CCF76AF8D898215758C /* Pods_CarRenting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05C34EC0213D0A5D234CCA75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CEF37A2F6949C65F15F237E /* Pods-CarRenting.debug.xcconfig */,
+				ACF604E87D4A4EDFA48C1EDB /* Pods-CarRenting.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1D65E5095404684E429DCAAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E459E2265B4F2853D7355C4 /* Pods_CarRenting.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C144C993252C13400078F916 = {
 			isa = PBXGroup;
 			children = (
 				C144C99E252C13400078F916 /* CarRenting */,
 				C144C99D252C13400078F916 /* Products */,
+				05C34EC0213D0A5D234CCA75 /* Pods */,
+				1D65E5095404684E429DCAAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +104,7 @@
 				C144C9A1252C13400078F916 /* SceneDelegate.swift */,
 				C17E3E1A25775E1200326946 /* ViewController */,
 				C144C9A8252C13420078F916 /* Assets.xcassets */,
+				C17E3E1C2577B16E00326946 /* GoogleService-Info.plist */,
 				C144C9AD252C13420078F916 /* Info.plist */,
 				C144C9AA252C13420078F916 /* LaunchScreen.storyboard */,
 			);
@@ -114,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C144C9B0252C13420078F916 /* Build configuration list for PBXNativeTarget "CarRenting" */;
 			buildPhases = (
+				4F72CE1F201DCBCADD5CCB05 /* [CP] Check Pods Manifest.lock */,
 				C144C998252C13400078F916 /* Sources */,
 				C144C999252C13400078F916 /* Frameworks */,
 				C144C99A252C13400078F916 /* Resources */,
+				8E96AAC3F614197F34AAEF62 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C144C9AC252C13420078F916 /* LaunchScreen.storyboard in Resources */,
+				C17E3E1D2577B16E00326946 /* GoogleService-Info.plist in Resources */,
 				C120C8FF257670290061A26F /* Search.storyboard in Resources */,
 				C120C8F7257660E80061A26F /* Work.storyboard in Resources */,
 				C17E3DFF2576720E00326946 /* Home.storyboard in Resources */,
@@ -176,6 +207,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F72CE1F201DCBCADD5CCB05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarRenting-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E96AAC3F614197F34AAEF62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarRenting/Pods-CarRenting-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarRenting/Pods-CarRenting-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CarRenting/Pods-CarRenting-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C144C998252C13400078F916 /* Sources */ = {
@@ -332,6 +405,7 @@
 		};
 		C144C9B1252C13420078F916 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CEF37A2F6949C65F15F237E /* Pods-CarRenting.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -351,6 +425,7 @@
 		};
 		C144C9B2252C13420078F916 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACF604E87D4A4EDFA48C1EDB /* Pods-CarRenting.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
