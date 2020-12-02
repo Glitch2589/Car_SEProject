@@ -1,3 +1,12 @@
+version 0.4
+- fix hầu hết bugs
+- group storyboards và viewcontroller gọn hơn
+- Tinh chỉnh 1 chút frontend phần login
+=========
+version 0.3.2 -> 0.3.3
+- clean code
++ fix minor bug (sai tên?)
+=========
 version 0.3.1
 by Quyet
 - Chia nhỏ từng phần ra để có thể làm chung trong 1 project - Để sửa layout 

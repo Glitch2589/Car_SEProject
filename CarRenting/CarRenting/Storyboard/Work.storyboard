@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="U4Z-C6-Kfo">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarID" id="Jsv-cX-ol7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lMh-1E-7YA"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hcT-bX-Xk2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9Rj-XG-NbD" kind="relationship" relationship="viewControllers" id="NOV-dL-qXB"/>
+                        <segue destination="jE2-3e-tzu" kind="relationship" relationship="viewControllers" id="8pT-fT-7Sb"/>
+                        <segue destination="wQX-V2-5Oy" kind="relationship" relationship="viewControllers" id="Ihs-CB-waQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lxX-2M-GVG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4465" y="-1595"/>
+        </scene>
+        <!--NavigationSearch-->
+        <scene sceneID="Dkh-ET-pqr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" referencedIdentifier="NavigationSearch" id="jE2-3e-tzu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="QuB-tT-Tmg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="brb-5c-lgK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5101" y="-1688"/>
+        </scene>
+        <!--NavigationHome-->
+        <scene sceneID="5E6-3Y-yxe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="NavigationHome" id="9Rj-XG-NbD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="SYG-aj-w95"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JTS-M0-MZj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5106" y="-1799"/>
+        </scene>
+        <!--NavigationProfile-->
+        <scene sceneID="drA-eE-omH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="NavigationProfile" id="wQX-V2-5Oy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="I4H-5d-BrU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EcX-h9-HwR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5099" y="-1529"/>
+        </scene>
+    </scenes>
+</document>
