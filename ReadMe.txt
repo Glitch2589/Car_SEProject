@@ -1,3 +1,7 @@
+version 0.6
+by Quyet
+- hoàn thiện signup, login, logout
+=========
 version 0.5
 by Quyet
 - update kết nối với firebase
