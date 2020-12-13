@@ -12,7 +12,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SignInViewController" customModule="CarRenting" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SignInViewController" customModule="CarRenting" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,14 +21,14 @@
                                 <rect key="frame" x="79" y="39" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2O-zs-3ey" userLabel="Username:">
-                                <rect key="frame" x="35" y="195" width="84" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2O-zs-3ey" userLabel="Username:">
+                                <rect key="frame" x="35" y="195" width="45" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zki-ig-XDK">
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zki-ig-XDK">
                                 <rect key="frame" x="145" y="190" width="236" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -45,7 +45,7 @@
                                 <rect key="frame" x="145" y="230" width="236" height="34"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLk-OA-BJ2">
                                 <rect key="frame" x="35" y="300" width="346" height="45"/>
@@ -53,6 +53,9 @@
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BUZ-uM-heC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="St8-oU-fzx">
                                 <rect key="frame" x="35" y="360" width="346" height="45"/>
@@ -89,12 +92,13 @@
                         <outlet property="LoginButton" destination="VLk-OA-BJ2" id="bl1-ky-FCD"/>
                         <outlet property="PasswordTextField" destination="Itv-ac-pnw" id="uzV-ue-2GY"/>
                         <outlet property="SignupButton" destination="St8-oU-fzx" id="nLE-7M-tkC"/>
-                        <outlet property="UsernameTextField" destination="Zki-ig-XDK" id="TF9-8K-7Hj"/>
+                        <outlet property="emailTextField" destination="Zki-ig-XDK" id="ctE-af-BUl"/>
+                        <segue destination="nln-Ac-qzk" kind="presentation" identifier="signInToTabBarVC" modalPresentationStyle="fullScreen" id="d3q-SC-Z0P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2820" y="59"/>
+            <point key="canvasLocation" x="2818.840579710145" y="58.695652173913047"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="V8R-Yl-MzQ">
@@ -135,7 +139,7 @@
                                 <rect key="frame" x="145" y="305" width="236" height="34"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOa-C8-M5r">
                                 <rect key="frame" x="35" y="350" width="45" height="21"/>
@@ -169,6 +173,9 @@
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Sign up"/>
+                                <connections>
+                                    <action selector="signup_TouchUpInside:" destination="5mh-He-fT5" eventType="touchUpInside" id="nkp-15-KHX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxs-v9-a6W">
                                 <rect key="frame" x="35" y="508" width="346" height="33"/>
@@ -196,6 +203,7 @@
                         <outlet property="ProfileImage" destination="UmU-8R-Gwj" id="xR4-Ta-ndR"/>
                         <outlet property="SignupButton" destination="md3-bj-0mi" id="ckr-yn-40d"/>
                         <outlet property="UsernameTextField" destination="nr1-al-lH6" id="bKf-LM-7XV"/>
+                        <segue destination="nln-Ac-qzk" kind="presentation" identifier="signUpToTabBarVC" modalPresentationStyle="fullScreen" id="lxK-55-DHZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r5C-xg-4u8" sceneMemberID="firstResponder"/>
@@ -211,6 +219,9 @@
             <point key="canvasLocation" x="3596" y="59"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="srE-Sy-bs9"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="2" width="42.666667938232422" height="34.333332061767578"/>
         <image name="placeholderImg" width="75" height="75"/>
